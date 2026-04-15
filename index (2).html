@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── SEO META TAGS ── -->
+  <title>Kanak Bahar Jewellers | Gold & Silver Jewellery in Agartala, Tripura</title>
+  <meta name="description" content="Kanak Bahar Jewellers – 30+ years of trust. Premium 22K & 24K Gold, Silver, Bridal Jewellery. Retail & Wholesale in Agartala, Tripura. Est. 1996." />
+  <meta name="keywords" content="Jewellery Shop in Agartala, Gold Jewellery in Tripura, Silver Jewellery Agartala, Bridal Jewellery Tripura, Wholesale Jewellery Supplier Agartala, 22K Gold Tripura, 24K Gold Agartala, Kanak Bahar Jewellers, Haradhan Karmakar" />
+  <meta name="author" content="Kanak Bahar Jewellers" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kanak Bahar Jewellers – 30+ Years of Trust Since 1996" />
+  <meta property="og:description" content="Premium Gold, Silver & Bridal Jewellery. Retail & Wholesale. Agartala, Tripura." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+
+      <!-- Logo (SVG) -->
+      <a href="#home" class="logo" onclick="showPage('home')">
+        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="20,2 24,14 37,14 27,22 31,34 20,27 9,34 13,22 3,14 16,14" fill="#C9A84C" opacity="0.9"/>
+          <circle cx="20" cy="20" r="6" fill="#0D0D0D" stroke="#C9A84C" stroke-width="1.5"/>
+          <circle cx="20" cy="20" r="3" fill="#C9A84C" opacity="0.8"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-name">Kanak Bahar</span>
+          <span class="logo-sub">Jewellers · Est. 1996</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"  onclick="showPage('home')">Home</a></li>
+        <li><a href="#about" onclick="showPage('about')">About</a></li>
+        <li><a href="#products" onclick="showPage('products')">Collections</a></li>
+        <li><a href="#wholesale" onclick="showPage('wholesale')">Wholesale</a></li>
+        <li><a href="#contact" onclick="showPage('contact')">Contact</a></li>
+      </ul>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="mobile-close" onclick="toggleMenu()">✕</button>
+      <a onclick="showPage('home');toggleMenu()">Home</a>
+      <a onclick="showPage('about');toggleMenu()">About</a>
+      <a onclick="showPage('products');toggleMenu()">Collections</a>
+      <a onclick="showPage('wholesale');toggleMenu()">Wholesale</a>
+      <a onclick="showPage('contact');toggleMenu()">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════
+       HOME PAGE
+  ══════════════════════════════════ -->
+  <section id="home" class="page active">
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-bg-pattern"></div>
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <div class="hero-badge animate-1">Est. 1996 · Agartala, Tripura</div>
+        <h1 class="hero-title animate-2">
+          30+ Years of Trust &<br/><em>Timeless Jewellery</em><br/>Since 1996
+        </h1>
+        <p class="hero-sub animate-3">
+          Discover exquisite handcrafted 22K & 24K Gold, Silver, and Bridal Jewellery.<br/>
+          Where every piece tells a story of artistry and devotion.
+        </p>
+        <div class="hero-btns animate-4">
+          <button class="btn-gold" onclick="showPage('products')">Explore Collection</button>
+          <button class="btn-outline" onclick="showPage('contact')">Contact Us</button>
+        </div>
+        <div class="hero-trust animate-5">
+          <div class="trust-item"><span class="trust-num">30+</span><span>Years Experience</span></div>
+          <div class="trust-divider"></div>
+          <div class="trust-item"><span class="trust-num">5000+</span><span>Happy Customers</span></div>
+          <div class="trust-divider"></div>
+          <div class="trust-item"><span class="trust-num">100%</span><span>Certified Purity</span></div>
+          <div class="trust-divider"></div>
+          <div class="trust-item"><span class="trust-num">500+</span><span>Unique Designs</span></div>
+        </div>
+      </div>
+      <!-- Hero decorative ring -->
+      <div class="hero-ring">
+        <div class="hero-ring-inner">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="hero-jewel-svg">
+            <defs>
+              <radialGradient id="gemGrad" cx="35%" cy="35%">
+                <stop offset="0%" stop-color="#f9e080"/>
+                <stop offset="60%" stop-color="#C9A84C"/>
+                <stop offset="100%" stop-color="#7a5c1e"/>
+              </radialGradient>
+            </defs>
+            <!-- Outer decorative ring -->
+            <circle cx="100" cy="100" r="90" fill="none" stroke="#C9A84C" stroke-width="0.5" stroke-dasharray="4 6" opacity="0.4"/>
+            <circle cx="100" cy="100" r="78" fill="none" stroke="#C9A84C" stroke-width="1" opacity="0.2"/>
+            <!-- Central gem -->
+            <polygon points="100,30 130,70 100,90 70,70" fill="url(#gemGrad)" opacity="0.9"/>
+            <polygon points="100,90 130,70 115,130" fill="#a07830" opacity="0.7"/>
+            <polygon points="100,90 70,70 85,130" fill="#C9A84C" opacity="0.8"/>
+            <polygon points="100,90 115,130 85,130 100,170" fill="#e8c97a" opacity="0.6"/>
+            <!-- Sparkles -->
+            <circle cx="100" cy="28" r="2" fill="#f9e080" opacity="0.8"/>
+            <circle cx="162" cy="62" r="1.5" fill="#f9e080" opacity="0.6"/>
+            <circle cx="162" cy="138" r="1.5" fill="#f9e080" opacity="0.6"/>
+            <circle cx="100" cy="172" r="2" fill="#f9e080" opacity="0.8"/>
+            <circle cx="38" cy="138" r="1.5" fill="#f9e080" opacity="0.6"/>
+            <circle cx="38" cy="62" r="1.5" fill="#f9e080" opacity="0.6"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- CATEGORY SHOWCASE -->
+    <div class="categories-section">
+      <div class="section-head">
+        <span class="section-label">Shop By Category</span>
+        <h2 class="section-title">Our <em>Collections</em></h2>
+        <div class="gold-line"></div>
+      </div>
+      <div class="category-grid">
+        <div class="cat-card" onclick="filterAndShow('gold22')">
+          <div class="cat-img" style="background: radial-gradient(circle at 35% 35%, #3d2a05, #1a1205);">
+            <svg viewBox="0 0 80 80" class="cat-svg"><text x="40" y="52" text-anchor="middle" font-size="36">💍</text></svg>
+          </div>
+          <div class="cat-label">22K Gold</div>
+        </div>
+        <div class="cat-card" onclick="filterAndShow('gold24')">
+          <div class="cat-img" style="background: radial-gradient(circle at 35% 35%, #4a3008, #1a1205);">
+            <svg viewBox="0 0 80 80" class="cat-svg"><text x="40" y="52" text-anchor="middle" font-size="36">✨</text></svg>
+          </div>
+          <div class="cat-label">24K Gold</div>
+        </div>
+        <div class="cat-card" onclick="filterAndShow('silver')">
+          <div class="cat-img" style="background: radial-gradient(circle at 35% 35%, #252535, #0f0f1e);">
+            <svg viewBox="0 0 80 80" class="cat-svg"><text x="40" y="52" text-anchor="middle" font-size="36">📿</text></svg>
+          </div>
+          <div class="cat-label">Silver</div>
+        </div>
+        <div class="cat-card" onclick="filterAndShow('bridal')">
+          <div class="cat-img" style="background: radial-gradient(circle at 35% 35%, #3a1515, #1a0808);">
+            <svg viewBox="0 0 80 80" class="cat-svg"><text x="40" y="52" text-anchor="middle" font-size="36">👑</text></svg>
+          </div>
+          <div class="cat-label">Bridal</div>
+        </div>
+        <div class="cat-card" onclick="filterAndShow('necklace')">
+          <div class="cat-img" style="background: radial-gradient(circle at 35% 35%, #1a2a1a, #0a140a);">
+            <svg viewBox="0 0 80 80" class="cat-svg"><text x="40" y="52" text-anchor="middle" font-size="36">💎</text></svg>
+          </div>
+          <div class="cat-label">Necklaces</div>
+        </div>
+        <div class="cat-card" onclick="filterAndShow('rings')">
+          <div class="cat-img" style="background: radial-gradient(circle at 35% 35%, #2a1a30, #140a1a);">
+            <svg viewBox="0 0 80 80" class="cat-svg"><text x="40" y="52" text-anchor="middle" font-size="36">💍</text></svg>
+          </div>
+          <div class="cat-label">Rings</div>
+        </div>
+        <div class="cat-card" onclick="filterAndShow('earrings')">
+          <div class="cat-img" style="background: radial-gradient(circle at 35% 35%, #2a2010, #140f05);">
+            <svg viewBox="0 0 80 80" class="cat-svg"><text x="40" y="52" text-anchor="middle" font-size="36">👂</text></svg>
+          </div>
+          <div class="cat-label">Earrings</div>
+        </div>
+        <div class="cat-card" onclick="filterAndShow('chains')">
+          <div class="cat-img" style="background: radial-gradient(circle at 35% 35%, #1a2530, #0a1218);">
+            <svg viewBox="0 0 80 80" class="cat-svg"><text x="40" y="52" text-anchor="middle" font-size="36">⛓️</text></svg>
+          </div>
+          <div class="cat-label">Chains</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURED PRODUCTS (Home) -->
+    <div class="featured-section">
+      <div class="section-head">
+        <span class="section-label">Handpicked For You</span>
+        <h2 class="section-title">Featured <em>Jewellery</em></h2>
+        <div class="gold-line"></div>
+      </div>
+      <div class="products-grid" id="featuredGrid"></div>
+      <div style="text-align:center;margin-top:3rem;">
+        <button class="btn-gold" onclick="showPage('products')">View All Collections</button>
+      </div>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <div class="testimonials-section">
+      <div class="section-head">
+        <span class="section-label">What Our Customers Say</span>
+        <h2 class="section-title">Trusted by <em>Thousands</em></h2>
+        <div class="gold-line"></div>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">"I bought my complete bridal jewellery from Kanak Bahar. The designs are breathtaking and the gold quality is absolutely certified. Haradhan ji personally guided us through everything."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">PS</div>
+            <div><strong>Priya Sarkar</strong><br/><span>Bridal Customer, 2023</span></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">"Best wholesale rates in all of Tripura! We have been sourcing from Kanak Bahar for over 8 years. Consistent quality, honest dealings, and great variety."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">RD</div>
+            <div><strong>Rajesh Das</strong><br/><span>Wholesale Partner, Udaipur</span></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">"Got a custom ring designed exactly as I imagined. The craftsmen here are truly talented. Highly recommend Kanak Bahar for any jewellery need — traditional or modern."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">MR</div>
+            <div><strong>Mithila Roy</strong><br/><span>Custom Design Customer</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="newsletter-section">
+      <div class="newsletter-inner">
+        <div>
+          <h3>Stay Updated with <em>New Arrivals</em></h3>
+          <p>Subscribe for exclusive offers, gold rate alerts, and festive deals.</p>
+        </div>
+        <div class="newsletter-form">
+          <input type="email" id="nlEmail" placeholder="Enter your email address" />
+          <button onclick="subscribeNewsletter()">Subscribe</button>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- END HOME -->
+
+
+  <!-- ══════════════════════════════════
+       ABOUT PAGE
+  ══════════════════════════════════ -->
+  <section id="about" class="page">
+    <div class="page-hero about-hero">
+      <span class="section-label">Our Story</span>
+      <h1>About <em>Kanak Bahar</em></h1>
+      <p>30+ Years of Craftsmanship, Trust & Timeless Jewellery</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-visual">
+        <div class="about-img-box">
+          <svg viewBox="0 0 300 360" xmlns="http://www.w3.org/2000/svg" class="about-svg">
+            <defs>
+              <linearGradient id="shopGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#2a1f08"/>
+                <stop offset="100%" stop-color="#0d0d0d"/>
+              </linearGradient>
+              <radialGradient id="glowGrad" cx="50%" cy="50%">
+                <stop offset="0%" stop-color="#C9A84C" stop-opacity="0.3"/>
+                <stop offset="100%" stop-color="#C9A84C" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <rect width="300" height="360" fill="url(#shopGrad)" rx="4"/>
+            <circle cx="150" cy="150" r="120" fill="url(#glowGrad)"/>
+            <!-- Store front illustration -->
+            <rect x="60" y="180" width="180" height="140" fill="#1a1205" rx="3"/>
+            <rect x="80" y="200" width="60" height="80" fill="#0d0d0d" rx="2" stroke="#C9A84C" stroke-width="1"/>
+            <rect x="160" y="200" width="60" height="80" fill="#0d0d0d" rx="2" stroke="#C9A84C" stroke-width="1"/>
+            <rect x="120" y="240" width="60" height="80" fill="#1a1205" rx="2"/>
+            <rect x="60" y="170" width="180" height="18" fill="#C9A84C" rx="2"/>
+            <text x="150" y="183" text-anchor="middle" fill="#0d0d0d" font-size="8" font-family="serif" font-weight="bold">KANAK BAHAR JEWELLERS</text>
+            <!-- Jewels displayed -->
+            <circle cx="110" cy="240" r="8" fill="#C9A84C" opacity="0.9"/>
+            <circle cx="190" cy="240" r="8" fill="#C9A84C" opacity="0.9"/>
+            <polygon points="150,60 168,100 210,100 178,124 190,164 150,142 110,164 122,124 90,100 132,100" fill="#C9A84C" opacity="0.85"/>
+            <circle cx="150" cy="110" r="12" fill="#0d0d0d" stroke="#C9A84C" stroke-width="1.5"/>
+            <circle cx="150" cy="110" r="6" fill="#C9A84C" opacity="0.7"/>
+          </svg>
+        </div>
+        <div class="about-badge-box">
+          <strong>1996</strong>
+          <span>Year Established</span>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <span class="section-label">Est. 1996</span>
+        <h2>A Legacy of <em>Craftsmanship</em><br/>& Trust</h2>
+        <p>Kanak Bahar Jewellers was founded in 1996 by <strong>Haradhan Karmakar</strong> with a singular vision: to bring the finest handcrafted jewellery to the people of Tripura and beyond. What began as a modest shop in Agartala's Digambar Market has grown into one of the most trusted jewellery destinations in Northeast India.</p>
+        <p>With over <strong>30 years of expertise</strong>, we have served thousands of families through their most precious milestones — weddings, anniversaries, festivals, and everyday moments. Our commitment to <strong>certified purity</strong> and <strong>honest pricing</strong> has earned us the trust of customers across generations.</p>
+        <p>Every piece in our collection — from traditional 22K gold sets to contemporary 24K designs and exquisite silver jewellery — is crafted with the meticulous care that only decades of mastery can bring.</p>
+
+        <div class="about-owner">
+          <div class="owner-icon">HK</div>
+          <div>
+            <strong>Haradhan Karmakar</strong>
+            <span>Founder & Proprietor · 30+ Years in Jewellery</span>
+          </div>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar"><div class="pillar-ico">🏆</div><h4>BIS Hallmarked</h4><p>All gold jewellery certified for purity</p></div>
+          <div class="pillar"><div class="pillar-ico">✦</div><h4>Master Craftsmen</h4><p>30+ years of artisan expertise</p></div>
+          <div class="pillar"><div class="pillar-ico">🤝</div><h4>Honest Pricing</h4><p>Transparent market-rate pricing always</p></div>
+          <div class="pillar"><div class="pillar-ico">💼</div><h4>Retail + Wholesale</h4><p>Serving individuals and businesses</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="faq-section">
+      <div class="section-head">
+        <span class="section-label">Common Questions</span>
+        <h2 class="section-title">Frequently <em>Asked</em></h2>
+        <div class="gold-line"></div>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Is all your gold jewellery hallmarked? <span class="fiq">+</span></button>
+          <div class="faq-a">Yes! All our gold jewellery carries the BIS hallmark, guaranteeing certified purity. We provide purity certificates with every purchase for your peace of mind.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Do you offer custom jewellery design? <span class="fiq">+</span></button>
+          <div class="faq-a">Absolutely! We specialize in creating custom jewellery as per your design. Visit our shop with your idea or reference image and our master craftsmen will bring your vision to life.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">What wholesale services do you provide? <span class="fiq">+</span></button>
+          <div class="faq-a">We supply gold and silver jewellery in bulk to retailers, boutiques, and distributors across Tripura and Northeast India at competitive wholesale rates. Contact us for pricing and minimum order details.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">What payment methods do you accept? <span class="fiq">+</span></button>
+          <div class="faq-a">We accept Cash, UPI (PhonePe, GPay, Paytm), NEFT/RTGS bank transfers, and card payments. For large wholesale orders, flexible payment terms are available.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Do you buy or exchange old gold jewellery? <span class="fiq">+</span></button>
+          <div class="faq-a">Yes! We offer gold exchange and buyback at fair market prices. Bring your old jewellery to our shop and we'll evaluate it transparently and give you the best value.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">How can I check today's gold rate? <span class="fiq">+</span></button>
+          <div class="faq-a">Call us at +91 9862178705 for today's gold and silver rates. We update prices daily based on market rates and always offer competitive prices in Agartala.</div>
+        </div>
+      </div>
+    </div>
+  </section><!-- END ABOUT -->
+
+
+  <!-- ══════════════════════════════════
+       PRODUCTS PAGE
+  ══════════════════════════════════ -->
+  <section id="products" class="page">
+    <div class="page-hero products-hero">
+      <span class="section-label">Explore Our Range</span>
+      <h1>Our <em>Collections</em></h1>
+      <p>22K & 24K Gold · Silver · Bridal · Necklaces · Rings · Chains · Earrings</p>
+    </div>
+
+    <!-- Category Filter Tabs -->
+    <div class="filter-bar">
+      <button class="filter-tab active" onclick="filterProducts('all',this)">All</button>
+      <button class="filter-tab" onclick="filterProducts('gold22',this)">22K Gold</button>
+      <button class="filter-tab" onclick="filterProducts('gold24',this)">24K Gold</button>
+      <button class="filter-tab" onclick="filterProducts('silver',this)">Silver</button>
+      <button class="filter-tab" onclick="filterProducts('bridal',this)">Bridal</button>
+      <button class="filter-tab" onclick="filterProducts('necklace',this)">Necklaces</button>
+      <button class="filter-tab" onclick="filterProducts('rings',this)">Rings</button>
+      <button class="filter-tab" onclick="filterProducts('earrings',this)">Earrings</button>
+      <button class="filter-tab" onclick="filterProducts('chains',this)">Chains</button>
+      <button class="filter-tab" onclick="filterProducts('bangles',this)">Bangles</button>
+    </div>
+
+    <div class="products-page-grid" id="productsPageGrid"></div>
+  </section><!-- END PRODUCTS -->
+
+
+  <!-- ══════════════════════════════════
+       WHOLESALE PAGE
+  ══════════════════════════════════ -->
+  <section id="wholesale" class="page">
+    <div class="page-hero wholesale-hero">
+      <span class="section-label">For Business Partners</span>
+      <h1>Wholesale <em>Services</em></h1>
+      <p>Competitive bulk rates for retailers, distributors & boutiques across Northeast India</p>
+    </div>
+
+    <div class="wholesale-layout">
+      <div class="ws-info">
+        <h2>Why Choose <em>Kanak Bahar</em><br/>for Wholesale?</h2>
+        <p>With 30+ years of experience in the jewellery trade, Kanak Bahar Jewellers is a trusted wholesale partner for businesses across Tripura and Northeast India. We combine quality craftsmanship with the best market pricing.</p>
+        <ul class="ws-list">
+          <li>Competitive wholesale rates on all jewellery categories</li>
+          <li>100% BIS hallmarked gold, certified quality</li>
+          <li>Custom bulk orders accepted with your design specifications</li>
+          <li>Reliable supply chain across Northeast India</li>
+          <li>Dedicated relationship manager for wholesale clients</li>
+          <li>Flexible payment terms for established business partners</li>
+          <li>Minimum order quantities flexible — contact us to discuss</li>
+          <li>Invoicing and documentation support provided</li>
+        </ul>
+        <div class="ws-contact-quick">
+          <a href="tel:+919862178705" class="ws-cta-call">📞 Call: +91 98621 78705</a>
+          <a href="https://wa.me/919862178705?text=I+am+interested+in+wholesale+jewellery" target="_blank" class="ws-cta-wa">💬 WhatsApp Us</a>
+        </div>
+      </div>
+
+      <div class="ws-form-box">
+        <h3>Submit Wholesale Inquiry</h3>
+        <form id="wholesaleForm" onsubmit="submitWholesale(event)">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" name="name" id="ws_name" placeholder="Your full name" required />
+          </div>
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" name="phone" id="ws_phone" placeholder="+91 XXXXX XXXXX" required />
+          </div>
+          <div class="form-group">
+            <label>Business Name</label>
+            <input type="text" name="business" id="ws_biz" placeholder="Your shop / business name" />
+          </div>
+          <div class="form-group">
+            <label>City / State</label>
+            <input type="text" name="city" id="ws_city" placeholder="e.g. Agartala, Tripura" />
+          </div>
+          <div class="form-group">
+            <label>Jewellery Type Required *</label>
+            <select name="type" id="ws_type" required>
+              <option value="">-- Select Category --</option>
+              <option>22K Gold Jewellery</option>
+              <option>24K Gold Jewellery</option>
+              <option>Silver Jewellery</option>
+              <option>Bridal Sets</option>
+              <option>Mixed / Multiple Categories</option>
+              <option>Custom Designed Pieces</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Message / Requirements *</label>
+            <textarea name="message" id="ws_msg" placeholder="Describe your requirements — quantity, designs, budget range, etc." required></textarea>
+          </div>
+          <button type="submit" class="btn-gold" style="width:100%;text-align:center;">Send Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </section><!-- END WHOLESALE -->
+
+
+  <!-- ══════════════════════════════════
+       CONTACT PAGE
+  ══════════════════════════════════ -->
+  <section id="contact" class="page">
+    <div class="page-hero contact-hero">
+      <span class="section-label">We'd Love to Hear From You</span>
+      <h1>Visit <em>Our Store</em></h1>
+      <p>Digambar Market, Masjid Patti, Agartala, Tripura</p>
+    </div>
+
+    <div class="contact-layout">
+      <div class="contact-info-col">
+        <h2>Get in <em>Touch</em></h2>
+        <p class="contact-intro">Whether you're looking for the perfect piece of jewellery, a wholesale partnership, or a custom design consultation — we are here to help.</p>
+
+        <div class="contact-card">
+          <div class="cc-icon">📍</div>
+          <div>
+            <strong>Shop Address</strong>
+            <p>Digambar Market, Masjid Patti,<br/>Agartala, Tripura (West) – 799001, India</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon">📞</div>
+          <div>
+            <strong>Primary Contact</strong>
+            <a href="tel:+919862178705">+91 98621 78705</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon">📱</div>
+          <div>
+            <strong>Alternate Number</strong>
+            <a href="tel:+919863113682">+91 98631 13682</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon">🕐</div>
+          <div>
+            <strong>Business Hours</strong>
+            <p>Monday – Saturday: 10:00 AM – 8:00 PM<br/>Sunday: 11:00 AM – 6:00 PM</p>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed -->
+        <div class="map-box">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14577.804!2d91.274!3d23.831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375141e37a64aa63%3A0x2a4ebaa72e53a060!2sDigambar+Market%2C+Agartala%2C+Tripura!5e0!3m2!1sen!2sin!4v1610000000000!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" title="Kanak Bahar Jewellers Location">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="contact-form-col">
+        <div class="contact-form-box">
+          <h3>Send Us a Message</h3>
+          <form id="contactForm" onsubmit="submitContact(event)">
+            <div class="form-group">
+              <label>Your Name *</label>
+              <input type="text" name="name" id="c_name" placeholder="Full name" required />
+            </div>
+            <div class="form-group">
+              <label>Phone Number *</label>
+              <input type="tel" name="phone" id="c_phone" placeholder="+91 XXXXX XXXXX" required />
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <select name="subject" id="c_subject">
+                <option>Product Inquiry</option>
+                <option>Wholesale Inquiry</option>
+                <option>Custom Jewellery Design</option>
+                <option>Gold Rate Query</option>
+                <option>Exchange / Buyback</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Message *</label>
+              <textarea name="message" id="c_msg" placeholder="How can we help you?" required></textarea>
+            </div>
+            <button type="submit" class="btn-gold" style="width:100%;text-align:center;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section><!-- END CONTACT -->
+
+
+  <!-- ══════════════════════════════════
+       FOOTER
+  ══════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo" style="margin-bottom:1rem;">
+          <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="20,2 24,14 37,14 27,22 31,34 20,27 9,34 13,22 3,14 16,14" fill="#C9A84C" opacity="0.9"/>
+            <circle cx="20" cy="20" r="6" fill="#0D0D0D" stroke="#C9A84C" stroke-width="1.5"/>
+            <circle cx="20" cy="20" r="3" fill="#C9A84C" opacity="0.8"/>
+          </svg>
+          <div class="logo-text"><span class="logo-name">Kanak Bahar</span><span class="logo-sub">Jewellers · Est. 1996</span></div>
+        </div>
+        <p>Premier destination for Gold, Silver & Bridal Jewellery in Agartala, Tripura. Trusted by thousands since 1996.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><button onclick="showPage('home')">Home</button></li>
+          <li><button onclick="showPage('about')">About Us</button></li>
+          <li><button onclick="showPage('products')">Collections</button></li>
+          <li><button onclick="showPage('wholesale')">Wholesale</button></li>
+          <li><button onclick="showPage('contact')">Contact</button></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Collections</h4>
+        <ul>
+          <li><button onclick="filterAndShow('gold22')">22K Gold</button></li>
+          <li><button onclick="filterAndShow('gold24')">24K Gold</button></li>
+          <li><button onclick="filterAndShow('silver')">Silver</button></li>
+          <li><button onclick="filterAndShow('bridal')">Bridal</button></li>
+          <li><button onclick="filterAndShow('rings')">Rings & Earrings</button></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+919862178705">+91 98621 78705</a></li>
+          <li><a href="tel:+919863113682">+91 98631 13682</a></li>
+          <li><span>Digambar Market, Masjid Patti</span></li>
+          <li><span>Agartala, Tripura (West)</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <span>Kanak Bahar Jewellers</span> — All rights reserved. Est. 1996 by Haradhan Karmakar.</p>
+      <p>Agartala's Most Trusted Jewellery Shop · Retail & Wholesale</p>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════
+       WHATSAPP FLOATING BUTTON
+  ══════════════════════════════════ -->
+  <a href="https://wa.me/919862178705?text=Hello%20Kanak%20Bahar%20Jewellers!%20I%20would%20like%20to%20inquire%20about%20your%20jewellery."
+     class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <!-- ══════════════════════════════════
+       CHATBOT
+  ══════════════════════════════════ -->
+  <button class="chat-toggle" id="chatToggle" onclick="toggleChat()" title="Chat with us">
+    <svg id="chatIcon" width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.52 3.66 1.424 5.174L2.003 22l4.902-1.416A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm-1 13H7v-2h4v2zm6 0h-4v-2h4v2zm0-4H7V9h10v2z"/>
+    </svg>
+    <div class="chat-notif" id="chatNotif">1</div>
+  </button>
+
+  <div class="chatbot-window" id="chatbotWindow">
+    <div class="chatbot-header">
+      <div class="chatbot-avatar-wrap">
+        <div class="chatbot-avatar">💎</div>
+        <div>
+          <strong>Kanak Bahar Assistant</strong>
+          <span class="online-dot">● Online</span>
+        </div>
+      </div>
+      <button class="chatbot-x" onclick="toggleChat()">✕</button>
+    </div>
+    <div class="chatbot-messages" id="chatMessages"></div>
+    <div class="chatbot-quick" id="chatQuick">
+      <button onclick="quickMsg('Gold rates today')">💰 Gold Rates</button>
+      <button onclick="quickMsg('Bridal collection')">👑 Bridal</button>
+      <button onclick="quickMsg('Wholesale inquiry')">💼 Wholesale</button>
+      <button onclick="quickMsg('Shop address and timings')">📍 Location</button>
+    </div>
+    <div class="chatbot-input-row">
+      <input type="text" id="chatInput" placeholder="Type your message…" onkeydown="if(event.key==='Enter') sendChatMsg()" />
+      <button onclick="sendChatMsg()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="toast" id="toast"><span id="toastMsg"></span></div>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
